@@ -1,0 +1,36 @@
+.contenedor .menu label{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    margin-right: 16px;
+    transition: all 0.3s ease;
+    border-bottom: 2px solid transparent;
+    font-size: 23px;
+    cursor: pointer;
+    
+}
+
+#btn_repro{
+    display: none;
+}
+.contenedor_repro{
+    background: rgba(0,0,0,0.5);
+    width: 100vw;
+    height: 100vh;
+    transition: all 500ms ease;
+    opacity: 0;
+    visibility: hidden;
+}
+#btn_repro:checked ~ .contenedor_repro{
+    opacity: 1;
+    visibility: visible;
+}
+.container{
+    width: 100%;
+    max-width: 250px;
+    background: #1c1c1c;
+    height: 100vh;
+    position: relative;
+    transition: all 500ms ease;
+    transform: translateY(-100%);
+}
